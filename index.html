@@ -12,23 +12,103 @@
 		<meta property="og:type" content="website" />
 		<meta property="og:url" content="https://https://madeinheaven91.github.io/" />
 		<meta property="og:description" content="Покупай шаурму брат" />
+		<style>
+		body{
+			background-color: #222222;
+		}
+		h1, h2, h3, h4, h5, h6, p, ol, li, ul, dl, dt, dd{
+			color: white;
+		}
+		div.container {
+			width: 100%;
+			overflow: auto;
+		}
+		div.container div{
+			text-align: center;
+			width: 33%;
+			height: 270px;
+			float: left;
+			position: relative;
+		}
+		
+		div.container div p{
+			color: black;
+		}
+		div.container div h4{
+			color: black;
+		}
+		
+		.learnmore{
+			border: 2px solid #111111;
+			background-color: #111111;
+			color: #EEEEEE;
+			padding: 10px;
+			border-radius: 8px;
+			font-size: 14px;
+			width: 80%;
+			transition-duration: 0.4s;
+			position: absolute;
+			left: 10%;
+			bottom: 10px;		
+		}
+			
+		.learnmore:hover{
+			background-color: #EEEEEE;
+			color: #111111;
+		}
+		</style>
 	</head>
 	<body>
-		<h1>Библия шаурмы</h1>
-		<h2>Шаурма. Навечно.</h2>
-		<img src="images/sh.jpg" alt="shaurma" width="500" height="500" />
+		<h1 style="text-align:center;">Библия шаурмы</h1>
+		<h2 style="text-align:center;">Шаурма. Навечно.</h2>
+		<img style="display:block; margin-left:auto; margin-right:auto" src="images/sh.jpg" alt="shaurma" width="500" height="500" />
+		
+		<hr>
+		<h3 style="text-align:center">Cтолицы шаурмы</h3>
+		<div class="container">
+			<div style="background-color:rgb(250,250,150)">
+				<h4>Москва</h4>
+				<hr color="black">
+				<p>Москва - российская столица шаурмы!</p>
+				<p>Я там жил кстати</p>
+				<button class="learnmore" onclick="document.location='https://ru.wikipedia.org/wiki/Москва'">Узнать больше</button>
+			</div>
+			
+			<div style="background-color:#FFAAAA">
+				<h4>Санкт-Петербург</h4>
+				<hr color="black">
+				<p>В Питере шаурму называют шавермой</p>
+				<p>В шаверме часто можно обнаружить соли</p>
+				<button class="learnmore" onclick="document.location='https://ru.wikipedia.org/wiki/Санкт-Петербург'">Узнать больше</button>
+			</div>
+		
+			<div style="background-color:#AAFFAA">
+				<h4>Стамбул</h4>
+				<hr color="black">
+				<p>Шаурма в Турции называется донер кебаб</p>
+				<p>Прежде чем поесть донер кебаб, нужно отобрать его у хитрого продавца</p>
+				<button class="learnmore" onclick="document.location='https://ru.wikipedia.org/wiki/Стамбул'">Узнать больше</button>
+				
+			</div>
+		</div>
+		
+		
 		<hr>
 		<h2>Наш магазин шаурмы - $$$$</h2>
 		<dl>
-			<dt><strong>шаурма классическая</strong> (200 руб.)</dt>
-			<dd>- лаваш курица салат томато огурец кетчунез</dd>
-			<dt><strong>шаурма веганская</strong> (150 руб.)</dt>
-			<dd>- лаваш <abbr title="без курицы"><span style="color:red">веганская курица</span></abbr> салат томато огурец кетчунез</dd>
+			<dt><b>шаурма классическая (<del>250</del> 200 руб.)</b> <img src="images/fire.gif" width="20" height="20"></dt>
+			<dd><i>- лаваш, курица, салат, томато, огурец, кетчунез</i></dd>
+			<dt><b>шаурма сырный лаваш (220 руб.)</b></dt>
+			<dd><i>- как классическая, только лаваш желтый</i></dd>
+			<dt><b>шаурма халяль (250 руб.)</b></dt>
+			<dd><i>- 0% свинины!!!</i></dd>
+			<dt><b>шаурма веганская (250 руб.)</b></dt>
+			<dd><i>- лаваш, <abbr title="производится из бобов южной африки, стоит дороже"><span style="color:red">веганская курица</span></abbr>, салат, томато, огурец, кетчунез</i></dd>
 		</dl>
 		
 		<hr>
 		<h3>Как делать шаурму в домашних условиях?</h3>
-		<p style="color:gray">Лаваш, курица, томато, огурец, майонез</style></p>
+		<p style="color:#AAAAAA; font-style:italic">Лаваш, курица, томато, огурец, майонез</p>
 		<ol start="1" type="1">
 			<li>Обжарьте курицу, чтобы была корочка</li>
 			<li>Нарежьте оугрец и томато</li>
@@ -38,7 +118,7 @@
 		</ol>
 		
 		<hr>
-		<form action="https://shorturl.at/beCG0">
+		<form action="https://shorturl.at/beCG0" style="color:white">
 			Номер карты: <input type="number" required> <br>
 			Срок действия: <input maxlength="2" size="2" type="number" required> / <input maxlength="2" size="2" type="number" required> <br>
 			Владелец: <input type="text" required> <br>
@@ -47,7 +127,7 @@
 		</form>
 		
 		<hr>
-		<address>
+		<address style="color:white">
 			данёк 2007<br>
 			<a href="https://t.me/madeinheaven91/">t.me/madeinheaven91</a><br>
 			шаурмак 2024-2024 (С)<br>
